@@ -10,4 +10,5 @@ type Log struct {
 	OSRelease    string `xorm:"os_release" json:"os_release"`
 	NodeVersion  string `xorm:"node_version" json:"node_version"`
 	UpdatedAt    int64  `xorm:"updated"`
+	Username     string `xorm:"username" json:"username"`
 }

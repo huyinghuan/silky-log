@@ -37,10 +37,4 @@ func (logCtrl *LogCtrl) Post(ctx *iris.Context) {
 	logBean.Add(data)
 	ctx.SetStatusCode(200)
 	ctx.Done()
-	// if vps, err := logBean.Get(id); err != nil {
-	// 	ctx.SetStatusCode(403)
-	// 	ctx.Writef("数据不存在")
-	// } else {
-	// 	ctx.JSON(200, vps)
-	// }
 }

@@ -30,6 +30,6 @@ func InitConnect() {
 	}
 }
 
-func GetDBConect() *xorm.Engine {
+func GetDBconnect() *xorm.Engine {
 	return engine
 }

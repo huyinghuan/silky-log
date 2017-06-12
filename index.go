@@ -1,6 +1,7 @@
 package main
 
 import (
+	"silky-log/bean"
 	"silky-log/controller"
 
 	iris "gopkg.in/kataras/iris.v6"
@@ -9,6 +10,7 @@ import (
 )
 
 func main() {
+	bean.InitConnect()
 	app := iris.New()
 	sessionAdapt := sessions.New(sessions.Config{})
 
